@@ -278,7 +278,7 @@ hh %>%
   geom_col(mapping=aes(x=time,y=average_cal,fill=average_cal))+ 
   labs(title="Hourly Average Calories vs hour of day",x="hours",y="average calories per hour")+ 
   scale_fill_gradient(low="pink",high="purple")+
-  theme(axis.text.x=element_text(angle=90))
+  theme(axis.text.x=element_text(angle=90),plot.title = element_text(hjust = 0.5))
 
 
 ```
@@ -301,7 +301,7 @@ hourly_steps %>%
   geom_col(mapping=aes(x=time,y=average_steps,fill=average_steps))+ 
   labs(title="Hourly Average Steps vs hour of day",x="hours",y="average steps per hour")+ 
   scale_fill_gradient(low="limegreen",high="darkolivegreen")+
-  theme(axis.text.x=element_text(angle=90))
+  theme(axis.text.x=element_text(angle=90),plot.title = element_text(hjust = 0.5))
 
 ```
 
